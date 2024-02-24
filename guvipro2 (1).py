@@ -42,8 +42,8 @@ with zipfile.ZipFile(SourceData,'r') as zip_ref:
 
 # here we first upload json file to Amazon S3 bucket and then read json file from S3 and then upload those data into the Dynamo Database
 bucketName = "guvidatamig"
-access_key = "AKIAZETMSNKAHBXWJBHC"
-secret_key = "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"
+access_key = "AKIAZXWJBHC"
+secret_key = "Cgsr95vWLu0"
 dynamoTableName = 'GuviDataMig'
 s3_client = boto3.client("s3",aws_access_key_id = access_key,aws_secret_access_key = secret_key)
 dynamo_client = boto3.client('dynamodb',aws_access_key_id = access_key,aws_secret_access_key = secret_key,region_name= 'us-east-1')
